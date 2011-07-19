@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		CE7708F713D5977300564203 /* CFNetwork.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CE7708F613D5977300564203 /* CFNetwork.framework */; };
+		CE7708FA13D5977700564203 /* AudioToolbox.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CE7708F913D5977700564203 /* AudioToolbox.framework */; };
 		CEBCB70413D5949200D85D6A /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CEBCB70313D5949200D85D6A /* UIKit.framework */; };
 		CEBCB70613D5949200D85D6A /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CEBCB70513D5949200D85D6A /* Foundation.framework */; };
 		CEBCB70813D5949200D85D6A /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CEBCB70713D5949200D85D6A /* CoreGraphics.framework */; };
@@ -16,23 +18,32 @@
 		CEBCB71713D5949200D85D6A /* MainWindow.xib in Resources */ = {isa = PBXBuildFile; fileRef = CEBCB71513D5949200D85D6A /* MainWindow.xib */; };
 		CEBCB71A13D5949200D85D6A /* SampleAppViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = CEBCB71913D5949200D85D6A /* SampleAppViewController.m */; };
 		CEBCB71D13D5949200D85D6A /* SampleAppViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = CEBCB71B13D5949200D85D6A /* SampleAppViewController.xib */; };
+		CEBCB72513D594FF00D85D6A /* pause.png in Resources */ = {isa = PBXBuildFile; fileRef = CEBCB72313D594FF00D85D6A /* pause.png */; };
+		CEBCB72613D594FF00D85D6A /* play.png in Resources */ = {isa = PBXBuildFile; fileRef = CEBCB72413D594FF00D85D6A /* play.png */; };
+		CEBCB72913D5961F00D85D6A /* AudioChunkStreamer.m in Sources */ = {isa = PBXBuildFile; fileRef = CEBCB72813D5961F00D85D6A /* AudioChunkStreamer.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		CE7708F613D5977300564203 /* CFNetwork.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CFNetwork.framework; path = System/Library/Frameworks/CFNetwork.framework; sourceTree = SDKROOT; };
+		CE7708F913D5977700564203 /* AudioToolbox.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AudioToolbox.framework; path = System/Library/Frameworks/AudioToolbox.framework; sourceTree = SDKROOT; };
 		CEBCB6FF13D5949200D85D6A /* SampleApp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SampleApp.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		CEBCB70313D5949200D85D6A /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
 		CEBCB70513D5949200D85D6A /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
 		CEBCB70713D5949200D85D6A /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
-		CEBCB70B13D5949200D85D6A /* SampleApp-Info.plist */ = {isa = PBXFileReference; path = "SampleApp-Info.plist"; sourceTree = "<group>"; };
+		CEBCB70B13D5949200D85D6A /* SampleApp-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "SampleApp-Info.plist"; sourceTree = "<group>"; };
 		CEBCB70D13D5949200D85D6A /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
-		CEBCB70F13D5949200D85D6A /* SampleApp-Prefix.pch */ = {isa = PBXFileReference; path = "SampleApp-Prefix.pch"; sourceTree = "<group>"; };
+		CEBCB70F13D5949200D85D6A /* SampleApp-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "SampleApp-Prefix.pch"; sourceTree = "<group>"; };
 		CEBCB71013D5949200D85D6A /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
-		CEBCB71213D5949200D85D6A /* SampleAppAppDelegate.h */ = {isa = PBXFileReference; path = SampleAppAppDelegate.h; sourceTree = "<group>"; };
+		CEBCB71213D5949200D85D6A /* SampleAppAppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SampleAppAppDelegate.h; sourceTree = "<group>"; };
 		CEBCB71313D5949200D85D6A /* SampleAppAppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SampleAppAppDelegate.m; sourceTree = "<group>"; };
 		CEBCB71613D5949200D85D6A /* en */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = en; path = en.lproj/MainWindow.xib; sourceTree = "<group>"; };
-		CEBCB71813D5949200D85D6A /* SampleAppViewController.h */ = {isa = PBXFileReference; path = SampleAppViewController.h; sourceTree = "<group>"; };
+		CEBCB71813D5949200D85D6A /* SampleAppViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SampleAppViewController.h; sourceTree = "<group>"; };
 		CEBCB71913D5949200D85D6A /* SampleAppViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SampleAppViewController.m; sourceTree = "<group>"; };
 		CEBCB71C13D5949200D85D6A /* en */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = en; path = en.lproj/SampleAppViewController.xib; sourceTree = "<group>"; };
+		CEBCB72313D594FF00D85D6A /* pause.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = pause.png; sourceTree = "<group>"; };
+		CEBCB72413D594FF00D85D6A /* play.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = play.png; sourceTree = "<group>"; };
+		CEBCB72713D5961F00D85D6A /* AudioChunkStreamer.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AudioChunkStreamer.h; sourceTree = "<group>"; };
+		CEBCB72813D5961F00D85D6A /* AudioChunkStreamer.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AudioChunkStreamer.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -40,6 +51,8 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				CE7708FA13D5977700564203 /* AudioToolbox.framework in Frameworks */,
+				CE7708F713D5977300564203 /* CFNetwork.framework in Frameworks */,
 				CEBCB70413D5949200D85D6A /* UIKit.framework in Frameworks */,
 				CEBCB70613D5949200D85D6A /* Foundation.framework in Frameworks */,
 				CEBCB70813D5949200D85D6A /* CoreGraphics.framework in Frameworks */,
@@ -69,6 +82,8 @@
 		CEBCB70213D5949200D85D6A /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				CE7708F913D5977700564203 /* AudioToolbox.framework */,
+				CE7708F613D5977300564203 /* CFNetwork.framework */,
 				CEBCB70313D5949200D85D6A /* UIKit.framework */,
 				CEBCB70513D5949200D85D6A /* Foundation.framework */,
 				CEBCB70713D5949200D85D6A /* CoreGraphics.framework */,
@@ -85,6 +100,8 @@
 				CEBCB71813D5949200D85D6A /* SampleAppViewController.h */,
 				CEBCB71913D5949200D85D6A /* SampleAppViewController.m */,
 				CEBCB71B13D5949200D85D6A /* SampleAppViewController.xib */,
+				CEBCB72713D5961F00D85D6A /* AudioChunkStreamer.h */,
+				CEBCB72813D5961F00D85D6A /* AudioChunkStreamer.m */,
 				CEBCB70A13D5949200D85D6A /* Supporting Files */,
 			);
 			path = SampleApp;
@@ -93,6 +110,8 @@
 		CEBCB70A13D5949200D85D6A /* Supporting Files */ = {
 			isa = PBXGroup;
 			children = (
+				CEBCB72313D594FF00D85D6A /* pause.png */,
+				CEBCB72413D594FF00D85D6A /* play.png */,
 				CEBCB70B13D5949200D85D6A /* SampleApp-Info.plist */,
 				CEBCB70C13D5949200D85D6A /* InfoPlist.strings */,
 				CEBCB70F13D5949200D85D6A /* SampleApp-Prefix.pch */,
@@ -151,6 +170,8 @@
 				CEBCB70E13D5949200D85D6A /* InfoPlist.strings in Resources */,
 				CEBCB71713D5949200D85D6A /* MainWindow.xib in Resources */,
 				CEBCB71D13D5949200D85D6A /* SampleAppViewController.xib in Resources */,
+				CEBCB72513D594FF00D85D6A /* pause.png in Resources */,
+				CEBCB72613D594FF00D85D6A /* play.png in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -164,6 +185,7 @@
 				CEBCB71113D5949200D85D6A /* main.m in Sources */,
 				CEBCB71413D5949200D85D6A /* SampleAppAppDelegate.m in Sources */,
 				CEBCB71A13D5949200D85D6A /* SampleAppViewController.m in Sources */,
+				CEBCB72913D5961F00D85D6A /* AudioChunkStreamer.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -276,6 +298,7 @@
 				CEBCB72213D5949200D85D6A /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};

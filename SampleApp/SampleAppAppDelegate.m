@@ -1,11 +1,3 @@
-//
-//  SampleAppAppDelegate.m
-//  SampleApp
-//
-//  Created by User on 19.07.11.
-//  Copyright 2011 __MyCompanyName__. All rights reserved.
-//
-
 #import "SampleAppAppDelegate.h"
 
 #import "SampleAppViewController.h"
